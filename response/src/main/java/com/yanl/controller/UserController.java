@@ -131,10 +131,11 @@ public class UserController {
     public String testException() throws SysException{
 
         try {
+            //模拟异常
             int i = 10 / 0;
         }catch (Exception e){
             e.printStackTrace();
-            throw new SysException("除数为0报错");
+            throw new SysException("查询所有账户出错....");
         }
         return "success";
     }
